@@ -1,57 +1,24 @@
-# menta_git_nyumon
+らんてくんの部屋
+らんてくん「ぼくの部屋にようこそだぞ！」 らんてくん「部屋の中は自由に探索していいからな！」 らんてくん「コマンドを駆使して、ロボらんてくんを一緒に探し出してほしいぞ！」
 
-事前準備
-SSH の設定
-以下、SSH・GitHub の接続設定の資料になります。 接続設定ができ次第、SSH でクローンしてください。
+mac tips
+らんてくん「Linux コマンドを紹介するぞ！」
 
-ローカルと GitHub の接続設定
-自分のローカル PC と GitHub を SSH で接続できるように設定を行います。 ローカル PC で SSH で利用する鍵を作成し、作成した鍵を GitHub に登録してください。
+ls らんてくん「ディレクトリの内容がわかるぞ！」
 
-ssh 鍵作成
-ssh ディレクトリに移動します(※ない場合は$ mkdir ~/.ssh で作成ししてください)。
+cd 移動したい場所 らんてくん「ディレクトリ間の移動ができるぞ！」
 
-※Windows を使っている人で Desktop に.ssh を作ってしまう人をちらほら見かけます。必ず WSL のルートディレクトリ(cd で移動できる箇所)に作るように注意してください。
+cd .. らんてくん「一つ上の階層のディレクトリに移動できるぞ！」 らんてくん「元いたディレクトリに戻れるぞ！」
 
-$ cd ~/.ssh
+cat 中身を見たいファイル名 or open 開きたいファイル名 らんてくん「ファイルの中身がわかるぞ！　怪しい txt ファイルを見つけたら、使ってくれよな！」
 
-鍵作成のコマンドを打ちます。 $ ssh-keygen -t rsa
+Windows tips
+らんてくん「コマンドプロンプトコマンドを紹介するぞ！」
 
-下記内容を聞かれるので、全て enter を打ってください。
+dir らんてくん「ディレクトリの内容がわかるぞ！」
 
-Enter file in which to save the key (/Users/(username)/.ssh/id_rsa):
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-下記コマンドで作成した鍵を確認しましょう。（id_rsa と id_rsa.pub があれば ok です） $ ls
+cd 移動したい場所 らんてくん「ディレクトリ間の移動ができるぞ！」
 
-GitHub に登録
-先ほど作成した鍵を GitHub に登録してください。
+cd .. らんてくん「一つ上の階層のディレクトリに移動できるぞ！」 らんてくん「元いたディレクトリに戻れるぞ！」
 
-$ cat id_rsa.pub で内容を表示してコピーします。
-
-ssh-rsa abcxyz....
-GitHub の右上のアイコンから「Settings」を開き、左メニューの「SSH and GPG keys」をクリックしてください。
-
-Image from Gyazo
-
-Image from Gyazo
-
-「New SSH key」をクリックし、コピーした内容を「key」のところにペーストして登録してください。（「title」は任意のもので大丈夫です） Image from Gyazo
-
-接続確認
-ローカル PC から GitHub に接続できるかこちらのコマンドで確認してください。 $ ssh -T git@github.com
-
-下記が返ってくれば ok です。
-
-Hi アカウント名! You've successfully authenticated, but GitHub does not provide shell access.
-
-脱出ゲームの説明
-事前準備が終わりましたら、好きなディレクトリに移動して、ターミナルで git clone https://github.com/Kaiwa-Jun/menta_git_nyumon.gitを実行してリポジトリをcloneしてください。
-
-以下は menta_git_nyumon ディレクトリ内に移動して行ってください。
-全て読んで実行してください！
-
-git fetch を打ってください。
-
-git checkout -b search_for_keyword origin/search_for_keyword を打ってください。
-
-次に、cat README.md を打ち込み README を表示させて、指示に従ってください！
+type 中身を見たいファイル名 or start 開きたいファイル名 らんてくん「ファイルの中身がわかるぞ！　怪しい txt ファイルを見つけたら、使ってくれよな！」
