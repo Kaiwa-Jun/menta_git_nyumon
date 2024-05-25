@@ -45,7 +45,9 @@ Image from Gyazo
 Hi アカウント名! You've successfully authenticated, but GitHub does not provide shell access.
 
 脱出ゲームの説明
-事前準備が終わりましたら、好きなディレクトリに移動して、ターミナルで git clone https://github.com/Kaiwa-Jun/menta_git_nyumon.gitを実行してリポジトリをcloneしてください。
+事前準備が終わりましたら、好きなディレクトリに移動して、ターミナルで 
+git clone https://github.com/Kaiwa-Jun/menta_git_nyumon.git
+を実行してリポジトリをcloneしてください。
 
 以下は menta_git_nyumon ディレクトリ内に移動して行ってください。
 全て読んで実行してください！
